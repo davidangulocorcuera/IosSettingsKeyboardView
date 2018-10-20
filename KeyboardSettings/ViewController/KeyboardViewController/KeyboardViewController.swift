@@ -12,7 +12,7 @@ class KeyboardViewController: UIViewController {
      @IBOutlet weak var tableViewSettings: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Keyboard"
+        title = "Keyboards"
        registercells()
 
         // Do any additional setup after loading the view.
@@ -54,7 +54,7 @@ UITableViewDelegate,UITableViewDataSource{
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 4
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -62,11 +62,12 @@ UITableViewDelegate,UITableViewDataSource{
         switch section{
         case 0:
             return 2
-            
         case 1:
             return 2
         case 2:
-            return 6
+            return 8
+        case 3:
+            return 1
             
         default:
             return 0
@@ -74,11 +75,32 @@ UITableViewDelegate,UITableViewDataSource{
        
         
     }
+    
    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
       
-            return 60.0
+            return 45.0
         }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        switch section {
+        case 2:
+            return 90.0
+        case 3:
+            return 90.0
+        default:
+            return 45.0
+        }
+    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        switch section {
+        case 2:
+            return "ALL KEYBOARDS"
+        case 3:
+            return "Double tapping the space bar will insert a period followed by a space."
+        default:
+            return nil
+        }
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.section{
         case 0:
@@ -93,6 +115,10 @@ UITableViewDelegate,UITableViewDataSource{
             
         case 2:
           
+            let cell:SwitchCell = (tableView.dequeueReusableCell(withIdentifier: "SwitchCell", for: indexPath) as? SwitchCell)!
+            return cell
+        case 3:
+            
             let cell:SwitchCell = (tableView.dequeueReusableCell(withIdentifier: "SwitchCell", for: indexPath) as? SwitchCell)!
             return cell
             

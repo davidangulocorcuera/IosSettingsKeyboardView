@@ -18,6 +18,8 @@
 		9A7F6D98217B15D20035F6C3 /* SwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A7F6D96217B15D20035F6C3 /* SwitchCell.xib */; };
 		9A7F6D9B217B15FA0035F6C3 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7F6D99217B15FA0035F6C3 /* KeyboardViewController.swift */; };
 		9A7F6D9C217B15FA0035F6C3 /* KeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A7F6D9A217B15FA0035F6C3 /* KeyboardViewController.xib */; };
+		9AE8183C217BC2690041A77F /* SwitchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE8183B217BC2690041A77F /* SwitchButton.swift */; };
+		9AE8183E217BC2780041A77F /* OptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE8183D217BC2780041A77F /* OptionButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		9A7F6D96217B15D20035F6C3 /* SwitchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchCell.xib; sourceTree = "<group>"; };
 		9A7F6D99217B15FA0035F6C3 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		9A7F6D9A217B15FA0035F6C3 /* KeyboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardViewController.xib; sourceTree = "<group>"; };
+		9AE8183B217BC2690041A77F /* SwitchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchButton.swift; sourceTree = "<group>"; };
+		9AE8183D217BC2780041A77F /* OptionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 		9A7F6D59217B14700035F6C3 /* KeyboardSettings */ = {
 			isa = PBXGroup;
 			children = (
+				9AE8183A217BC2300041A77F /* Model */,
 				9A7F6D89217B151E0035F6C3 /* ViewController */,
 				9A7F6D88217B150B0035F6C3 /* Cells */,
 				9A7F6D5A217B14700035F6C3 /* AppDelegate.swift */,
@@ -175,6 +180,15 @@
 				9A7F6D92217B15BE0035F6C3 /* OptionCell.xib */,
 			);
 			path = OptionCell;
+			sourceTree = "<group>";
+		};
+		9AE8183A217BC2300041A77F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9AE8183B217BC2690041A77F /* SwitchButton.swift */,
+				9AE8183D217BC2780041A77F /* OptionButton.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,7 +326,9 @@
 			files = (
 				9A7F6D93217B15BE0035F6C3 /* OptionCell.swift in Sources */,
 				9A7F6D5B217B14700035F6C3 /* AppDelegate.swift in Sources */,
+				9AE8183E217BC2780041A77F /* OptionButton.swift in Sources */,
 				9A7F6D97217B15D20035F6C3 /* SwitchCell.swift in Sources */,
+				9AE8183C217BC2690041A77F /* SwitchButton.swift in Sources */,
 				9A7F6D9B217B15FA0035F6C3 /* KeyboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
