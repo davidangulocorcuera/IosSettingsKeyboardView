@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		9A7F6D5B217B14700035F6C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7F6D5A217B14700035F6C3 /* AppDelegate.swift */; };
-		9A7F6D5D217B14700035F6C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7F6D5C217B14700035F6C3 /* ViewController.swift */; };
-		9A7F6D60217B14700035F6C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A7F6D5E217B14700035F6C3 /* Main.storyboard */; };
 		9A7F6D62217B14730035F6C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A7F6D61217B14730035F6C3 /* Assets.xcassets */; };
 		9A7F6D65217B14730035F6C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A7F6D63217B14730035F6C3 /* LaunchScreen.storyboard */; };
 		9A7F6D70217B14730035F6C3 /* KeyboardSettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7F6D6F217B14730035F6C3 /* KeyboardSettingsTests.swift */; };
 		9A7F6D7B217B14730035F6C3 /* KeyboardSettingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7F6D7A217B14730035F6C3 /* KeyboardSettingsUITests.swift */; };
+		9A7F6D93217B15BE0035F6C3 /* OptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7F6D91217B15BE0035F6C3 /* OptionCell.swift */; };
+		9A7F6D94217B15BE0035F6C3 /* OptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A7F6D92217B15BE0035F6C3 /* OptionCell.xib */; };
+		9A7F6D97217B15D20035F6C3 /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7F6D95217B15D20035F6C3 /* SwitchCell.swift */; };
+		9A7F6D98217B15D20035F6C3 /* SwitchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A7F6D96217B15D20035F6C3 /* SwitchCell.xib */; };
+		9A7F6D9B217B15FA0035F6C3 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7F6D99217B15FA0035F6C3 /* KeyboardViewController.swift */; };
+		9A7F6D9C217B15FA0035F6C3 /* KeyboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A7F6D9A217B15FA0035F6C3 /* KeyboardViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +40,6 @@
 /* Begin PBXFileReference section */
 		9A7F6D57217B14700035F6C3 /* KeyboardSettings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardSettings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A7F6D5A217B14700035F6C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9A7F6D5C217B14700035F6C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9A7F6D5F217B14700035F6C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A7F6D61217B14730035F6C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A7F6D64217B14730035F6C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A7F6D66217B14730035F6C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +49,12 @@
 		9A7F6D76217B14730035F6C3 /* KeyboardSettingsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyboardSettingsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A7F6D7A217B14730035F6C3 /* KeyboardSettingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardSettingsUITests.swift; sourceTree = "<group>"; };
 		9A7F6D7C217B14730035F6C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A7F6D91217B15BE0035F6C3 /* OptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionCell.swift; sourceTree = "<group>"; };
+		9A7F6D92217B15BE0035F6C3 /* OptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionCell.xib; sourceTree = "<group>"; };
+		9A7F6D95217B15D20035F6C3 /* SwitchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchCell.swift; sourceTree = "<group>"; };
+		9A7F6D96217B15D20035F6C3 /* SwitchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchCell.xib; sourceTree = "<group>"; };
+		9A7F6D99217B15FA0035F6C3 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		9A7F6D9A217B15FA0035F6C3 /* KeyboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +105,9 @@
 		9A7F6D59217B14700035F6C3 /* KeyboardSettings */ = {
 			isa = PBXGroup;
 			children = (
+				9A7F6D89217B151E0035F6C3 /* ViewController */,
+				9A7F6D88217B150B0035F6C3 /* Cells */,
 				9A7F6D5A217B14700035F6C3 /* AppDelegate.swift */,
-				9A7F6D5C217B14700035F6C3 /* ViewController.swift */,
-				9A7F6D5E217B14700035F6C3 /* Main.storyboard */,
 				9A7F6D61217B14730035F6C3 /* Assets.xcassets */,
 				9A7F6D63217B14730035F6C3 /* LaunchScreen.storyboard */,
 				9A7F6D66217B14730035F6C3 /* Info.plist */,
@@ -123,6 +131,50 @@
 				9A7F6D7C217B14730035F6C3 /* Info.plist */,
 			);
 			path = KeyboardSettingsUITests;
+			sourceTree = "<group>";
+		};
+		9A7F6D88217B150B0035F6C3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9A7F6D90217B15A30035F6C3 /* OptionCell */,
+				9A7F6D8F217B15910035F6C3 /* SwitchCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9A7F6D89217B151E0035F6C3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9A7F6D8A217B15330035F6C3 /* KeyboardViewController */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9A7F6D8A217B15330035F6C3 /* KeyboardViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9A7F6D99217B15FA0035F6C3 /* KeyboardViewController.swift */,
+				9A7F6D9A217B15FA0035F6C3 /* KeyboardViewController.xib */,
+			);
+			path = KeyboardViewController;
+			sourceTree = "<group>";
+		};
+		9A7F6D8F217B15910035F6C3 /* SwitchCell */ = {
+			isa = PBXGroup;
+			children = (
+				9A7F6D95217B15D20035F6C3 /* SwitchCell.swift */,
+				9A7F6D96217B15D20035F6C3 /* SwitchCell.xib */,
+			);
+			path = SwitchCell;
+			sourceTree = "<group>";
+		};
+		9A7F6D90217B15A30035F6C3 /* OptionCell */ = {
+			isa = PBXGroup;
+			children = (
+				9A7F6D91217B15BE0035F6C3 /* OptionCell.swift */,
+				9A7F6D92217B15BE0035F6C3 /* OptionCell.xib */,
+			);
+			path = OptionCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,8 +282,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A7F6D65217B14730035F6C3 /* LaunchScreen.storyboard in Resources */,
+				9A7F6D9C217B15FA0035F6C3 /* KeyboardViewController.xib in Resources */,
+				9A7F6D98217B15D20035F6C3 /* SwitchCell.xib in Resources */,
 				9A7F6D62217B14730035F6C3 /* Assets.xcassets in Resources */,
-				9A7F6D60217B14700035F6C3 /* Main.storyboard in Resources */,
+				9A7F6D94217B15BE0035F6C3 /* OptionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +310,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A7F6D5D217B14700035F6C3 /* ViewController.swift in Sources */,
+				9A7F6D93217B15BE0035F6C3 /* OptionCell.swift in Sources */,
 				9A7F6D5B217B14700035F6C3 /* AppDelegate.swift in Sources */,
+				9A7F6D97217B15D20035F6C3 /* SwitchCell.swift in Sources */,
+				9A7F6D9B217B15FA0035F6C3 /* KeyboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +349,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9A7F6D5E217B14700035F6C3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9A7F6D5F217B14700035F6C3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9A7F6D63217B14730035F6C3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
