@@ -41,6 +41,9 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lbl_tittle" destination="nry-JY-oDf" id="ZQ1-fS-d93"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

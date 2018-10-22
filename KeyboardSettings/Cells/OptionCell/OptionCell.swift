@@ -9,6 +9,7 @@
 import UIKit
 
 class OptionCell: UITableViewCell {
+    @IBOutlet weak var lbl_tittle:UILabel?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

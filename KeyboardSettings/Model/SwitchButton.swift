@@ -17,10 +17,12 @@ class SwitchButton{
     var bool_characterPreview: Bool!
     var bool_shortcut: Bool!
     var bool_enableDictation: Bool!
-    var arr_str_buttonNames : [String]!
+   
+    
+    init(){}
     
     init(bool_autoCapitalization: Bool,bool_autoCorrection: Bool,bool_checkSpelling: Bool,bool_enableCapsLock: Bool,bool_predictive: Bool,bool_smartPunctuation: Bool,bool_characterPreview: Bool,
-         bool_shortcut: Bool,bool_enableDictation: Bool,arr_str_buttonNames : [String]){
+         bool_shortcut: Bool,bool_enableDictation: Bool){
         self.bool_autoCapitalization = bool_autoCapitalization
         self.bool_autoCorrection = bool_autoCorrection
         self.bool_checkSpelling = bool_checkSpelling
@@ -30,8 +32,9 @@ class SwitchButton{
         self.bool_characterPreview = bool_characterPreview
         self.bool_shortcut = bool_shortcut
         self.bool_enableDictation = bool_enableDictation
-        self.arr_str_buttonNames = arr_str_buttonNames
+      
         
         
     }
+    
 }

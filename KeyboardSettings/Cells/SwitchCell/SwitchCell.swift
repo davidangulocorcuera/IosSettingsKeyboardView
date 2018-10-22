@@ -9,7 +9,7 @@
 import UIKit
 
 class SwitchCell: UITableViewCell {
-
+    @IBOutlet weak var lbl_tittle:UILabel?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
