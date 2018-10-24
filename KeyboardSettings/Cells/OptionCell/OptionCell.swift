@@ -10,6 +10,7 @@ import UIKit
 
 class OptionCell: UITableViewCell {
     @IBOutlet weak var lbl_tittle:UILabel?
+    @IBOutlet weak var lbl_option:UILabel?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

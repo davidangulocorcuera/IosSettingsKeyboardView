@@ -82,16 +82,27 @@ UITableViewDelegate,UITableViewDataSource{
    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
       
-            return 55.0
+            return 44.0
         }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         switch section {
+        case 1:
+            return 35.0
         case 2:
-            return 90.0
+            return 70.0
         case 3:
-            return 90.0
+            return 40.0
         default:
-            return 55.0
+            return 35.0
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        if(section == 2){
+            return 45.0
+        }
+        else {
+            return 1
         }
     }
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -99,10 +110,16 @@ UITableViewDelegate,UITableViewDataSource{
         case 2:
             return "ALL KEYBOARDS"
         case 3:
-            return "Double tapping the space bar will insert a period followed by a space."
+            return "DICTATION"
         default:
             return nil
         }
+    }
+    func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
+        if(section == 2){
+            return "Double tapping the space bar will insert a period followed by a space."
+        }
+        else{ return nil}
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.section{
@@ -114,6 +131,7 @@ UITableViewDelegate,UITableViewDataSource{
             case 0:
                 cell.accessoryType = .disclosureIndicator
                 cell.lbl_tittle?.text = "Keyboards"
+                  cell.lbl_option?.text = "3"
             case 1:
                 cell.lbl_tittle?.text = "Hardware Keyboard"
            
@@ -131,6 +149,7 @@ UITableViewDelegate,UITableViewDataSource{
                 cell.lbl_tittle?.text = "Text Replacement"
             case 1:
                 cell.lbl_tittle?.text = "One Handed Keyboard"
+                cell.lbl_option?.text = "Off"
                 
             default:
                 return cell

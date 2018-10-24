@@ -26,16 +26,27 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJG-Mf-vTa">
+                        <rect key="frame" x="277" y="12" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.72834358808290156" green="0.72834358808290156" blue="0.72834358808290156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="fJG-Mf-vTa" firstAttribute="leading" secondItem="x4d-xp-8cJ" secondAttribute="trailing" constant="8" id="7tn-rh-dmU"/>
                     <constraint firstAttribute="trailingMargin" secondItem="x4d-xp-8cJ" secondAttribute="trailing" constant="35" id="Tgv-SV-BfH"/>
                     <constraint firstAttribute="bottomMargin" secondItem="x4d-xp-8cJ" secondAttribute="bottom" constant="1" id="YND-OL-iGF"/>
+                    <constraint firstItem="fJG-Mf-vTa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="gTh-nq-Ycn"/>
                     <constraint firstItem="x4d-xp-8cJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="23" id="kId-3g-TWg"/>
                     <constraint firstItem="x4d-xp-8cJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="oxQ-rM-4df"/>
+                    <constraint firstAttribute="bottom" secondItem="fJG-Mf-vTa" secondAttribute="bottom" constant="10.5" id="ySP-nA-VjN"/>
+                    <constraint firstAttribute="trailing" secondItem="fJG-Mf-vTa" secondAttribute="trailing" constant="1" id="zp7-Ce-U3V"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="lbl_option" destination="fJG-Mf-vTa" id="pku-jO-hlK"/>
                 <outlet property="lbl_tittle" destination="x4d-xp-8cJ" id="ttu-h2-fJC"/>
             </connections>
         </tableViewCell>
