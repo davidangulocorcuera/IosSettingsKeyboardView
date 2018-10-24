@@ -206,6 +206,7 @@ UITableViewDelegate,UITableViewDataSource{
 extension KeyboardViewController: SwitchStatusTableViewCellDelegate{
     func switchStatusTableViewCellDidPressed(cell: SwitchCell, didChangevalue value: Bool) {
         let indexPath = tableViewSettings.indexPath(for: cell)
+        
         switch indexPath?.row{
         case 0:
             if(cell.sw_button?.isOn)!{ swButton.bool_autoCapitalization = true}
@@ -260,9 +261,11 @@ extension KeyboardViewController: SwitchStatusTableViewCellDelegate{
                 swButton.bool_shortcut = false
             }
             print(swButton.bool_shortcut)
+       
         default:
             print ( "hola")
         }
+        
     }
  
 }
