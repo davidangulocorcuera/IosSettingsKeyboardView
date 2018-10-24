@@ -122,8 +122,9 @@ UITableViewDelegate,UITableViewDataSource{
         else{ return nil}
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if(indexPath.section == 0 || indexPath.section == 1){
         let cell: OptionCell = tableViewSettings.cellForRow(at: indexPath) as! OptionCell
-        print((cell.lbl_tittle?.text)!)
+            print((cell.lbl_tittle?.text)!)}
 
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -190,6 +191,7 @@ UITableViewDelegate,UITableViewDataSource{
         case 3:
             
             let cell:SwitchCell = (tableView.dequeueReusableCell(withIdentifier: "SwitchCell", for: indexPath) as? SwitchCell)!
+            cell.delegate = self
             cell.lbl_tittle?.text = "Enable Dictation"
             return cell
             
@@ -206,7 +208,7 @@ UITableViewDelegate,UITableViewDataSource{
 extension KeyboardViewController: SwitchStatusTableViewCellDelegate{
     func switchStatusTableViewCellDidPressed(cell: SwitchCell, didChangevalue value: Bool) {
         let indexPath = tableViewSettings.indexPath(for: cell)
-        
+        if(indexPath?.section == 2 ){
         switch indexPath?.row{
         case 0:
             if(cell.sw_button?.isOn)!{ swButton.bool_autoCapitalization = true}
@@ -264,6 +266,16 @@ extension KeyboardViewController: SwitchStatusTableViewCellDelegate{
        
         default:
             print ( "hola")
+        }
+        }
+        else if(indexPath?.section == 3){
+            if(cell.sw_button?.isOn)!{
+                swButton.bool_enableDictation = true}
+            else{
+                swButton.bool_enableDictation = false
+            }
+            print(swButton.bool_enableDictation)
+            
         }
         
     }
