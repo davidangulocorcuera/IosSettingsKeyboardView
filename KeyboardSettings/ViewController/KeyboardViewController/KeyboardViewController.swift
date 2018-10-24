@@ -122,11 +122,9 @@ UITableViewDelegate,UITableViewDataSource{
         else{ return nil}
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-         /*let cell:OptionCell = (tableView.dequeueReusableCell(withIdentifier: "OptionCell", for: indexPath) as? OptionCell)!*/
         let cell: OptionCell = tableViewSettings.cellForRow(at: indexPath) as! OptionCell
         print((cell.lbl_tittle?.text)!)
-      
-        //print(cell.lbl_tittle)
+
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.section{
@@ -164,9 +162,10 @@ UITableViewDelegate,UITableViewDataSource{
             return cell
             
         case 2:
+            
           
             let cell:SwitchCell = (tableView.dequeueReusableCell(withIdentifier: "SwitchCell", for: indexPath) as? SwitchCell)!
-            
+            cell.delegate = self
             switch indexPath.row{
             case 0:
                 cell.lbl_tittle?.text = "Auto-Capitalization"
@@ -204,5 +203,67 @@ UITableViewDelegate,UITableViewDataSource{
         
         
     }
-   
+extension KeyboardViewController: SwitchStatusTableViewCellDelegate{
+    func switchStatusTableViewCellDidPressed(cell: SwitchCell, didChangevalue value: Bool) {
+        let indexPath = tableViewSettings.indexPath(for: cell)
+        switch indexPath?.row{
+        case 0:
+            if(cell.sw_button?.isOn)!{ swButton.bool_autoCapitalization = true}
+            else{
+              swButton.bool_autoCapitalization = false
+            }
+            print(swButton.bool_autoCapitalization)
+        case 1:
+            if(cell.sw_button?.isOn)!{swButton.bool_autoCorrection = true}
+            else{
+               swButton.bool_autoCorrection = false
+            }
+            print(swButton.bool_autoCorrection)
+        case 2:
+            if(cell.sw_button?.isOn)!{swButton.bool_checkSpelling = true}
+            else{
+                swButton.bool_checkSpelling = false
+            }
+            print(swButton.bool_checkSpelling)
+        case 3:
+             if(cell.sw_button?.isOn)!{
+                swButton.bool_predictive = true}
+             else{
+                swButton.bool_predictive = false
+            }
+            print(swButton.bool_predictive)
+        case 4:
+            if(cell.sw_button?.isOn)!{
+                swButton.bool_enableCapsLock = true}
+            else{
+                swButton.bool_enableCapsLock = false
+            }
+            print(swButton.bool_enableCapsLock)
+        case 5:
+             if(cell.sw_button?.isOn)!{
+                swButton.bool_smartPunctuation = true}
+             else{
+                swButton.bool_smartPunctuation = false
+            }
+            print(swButton.bool_smartPunctuation)
+        case 6:
+             if(cell.sw_button?.isOn)!{
+                swButton.bool_characterPreview = true}
+             else{
+                swButton.bool_characterPreview = false
+            }
+            print(swButton.bool_characterPreview)
+        case 7:
+            if(cell.sw_button?.isOn)!{
+                swButton.bool_shortcut = true}
+            else{
+                swButton.bool_shortcut = false
+            }
+            print(swButton.bool_shortcut)
+        default:
+            print ( "hola")
+        }
+    }
+ 
+}
 

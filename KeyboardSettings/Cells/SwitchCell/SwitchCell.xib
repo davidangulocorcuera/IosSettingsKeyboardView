@@ -35,6 +35,9 @@
                             <constraint firstAttribute="width" constant="47" id="5MF-zc-CqD"/>
                             <constraint firstAttribute="height" constant="31" id="KRB-gT-OvO"/>
                         </constraints>
+                        <connections>
+                            <action selector="switchButtonPressed" destination="KGk-i7-Jjw" eventType="valueChanged" id="hZr-us-jYo"/>
+                        </connections>
                     </switch>
                 </subviews>
                 <constraints>
@@ -50,6 +53,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="lbl_tittle" destination="nry-JY-oDf" id="ZQ1-fS-d93"/>
+                <outlet property="sw_button" destination="NHN-Y3-Xqa" id="dYe-ZK-jwe"/>
             </connections>
         </tableViewCell>
     </objects>
