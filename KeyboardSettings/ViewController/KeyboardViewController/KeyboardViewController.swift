@@ -121,6 +121,13 @@ UITableViewDelegate,UITableViewDataSource{
         }
         else{ return nil}
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+         /*let cell:OptionCell = (tableView.dequeueReusableCell(withIdentifier: "OptionCell", for: indexPath) as? OptionCell)!*/
+        let cell: OptionCell = tableViewSettings.cellForRow(at: indexPath) as! OptionCell
+        print((cell.lbl_tittle?.text)!)
+      
+        //print(cell.lbl_tittle)
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.section{
         case 0:
